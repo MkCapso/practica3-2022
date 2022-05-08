@@ -8,33 +8,15 @@
 </head>
 <body>
 
-    <script>
+    <input placeholder="Ingrese dato 1" type="number" id="inp_d1">
 
-        //Inicializamos o creamos por primera vez una constante
-        //acá se declara la constante
-        const numero = 22
+    <input placeholder="Ingrese dato 2" type="number" id="inp_d2">
 
-        //es una ventana emergente o popup
-        //alert(numero)
-
-        //consola del navegado
-        console.log('probando uso de consola')
-        console.log('Edad: '+numero+' - DNI: 33621602')
-
-        //template string
-        console.log(`
-            probando template:
-            
-            - Edad:${numero}
-            - Item 2
-            - Item 3
-        `)
-
-        const dato_ingresado = prompt('Ingrese su DNI')
-
-        //testeo
-        console.log(dato_ingresado)
-    </script>
-    
+    <h1 id="h_resultado"></h1>
+    <button onclick="recolectar_datos()">Ejecutar</button>
+    <!---<script src="main.js"></script>-->
+    <!--<script src="variables.js"></script>-->
+    <!--<script src="funciones.js"></script>-->
+    <script src="funcionesconretorno.js"></script>
 </body>
 </html>
