@@ -1,13 +1,13 @@
-function calcular_volts(v,i,r) {
-    const ohms = parseInt(v) / parseInt(i)
-    const amper = parseInt(v) / parseInt(r)
-    const volts = parseInt(i) * parseInt(r)
+function calcular(a,b) {    
+    const resultado = parseInt(a) * parseInt(b)
+    return resultado
 }
 
 function recolectar_datos() {
-    const res = document.getElementById("inp_dr").value
-    const int = document.getElementById("inp_di").value
-    const ten = document.getElementById("inp_dt").value
+    const dato1 = document.getElementById("inp_d1").value
+    const dato2 = document.getElementById("inp_d2").value    
 
-    calcular(ten,int,res)
+    const respuesta = calcular(dato1,dato2)
+
+    document.getElementById("h_resultado").textContent = respuesta
 }

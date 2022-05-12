@@ -24,25 +24,24 @@
 
                     <div class="mb-3">
 
+                        <h1 class="display-6">Calculo de Tensión</h1>
+
                         <label class="mb-2">Resistencia</label>
-                        <input placeholder="Ohmios" class="form-control" type="number" id="inp_dr">
+                        <input placeholder="Ohmios" class="form-control" type="number" id="inp_d1">
     
                     </div>
 
                     <div class="mb-3">
 
                         <label class="mb-2">Intensidad</label>
-                        <input placeholder="Amperios" class="form-control" type="number" id="inp_di">
+                        <input placeholder="Amperios" class="form-control" type="number" id="inp_d2">
     
                     </div>
 
-                    <div class="mb-3">
-
-                        <label class="mb-2">Tensión</label>
-                        <input placeholder="Voltios" class="form-control" type="number" id="inp_dt">
-    
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                        <div class="btn btn-primary" onclick="recolectar_datos()">Calcular</div>
                     </div>
-
+                    
                 </div>
 
                 <div class="col-lg-4">
@@ -61,11 +60,13 @@
 
                 <div class="col-lg-4">
 
+                    <h1 class="display-1" id="h_resultado"></h1>
+
                 </div>
 
             </div>            
             
         </div>
-
+        <script src="main.js"></script>
     </body>
 </html>
