@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Concesionaria de Autos</title>
+        <link rel="stylesheet" href="bootstrap.min.css">
+    </head>
+    <body>
+
+        <h1>Precio de vehiculo</h1>
+
+          <select id="slt_vehiculo">
+            <option selected disabled value="-1">Seleccione vehículo</option>
+            <option value="0">Ford Fiesta</option>
+            <option value="1">Ford Focus</option>
+            <option value="2">Ford Ka</option>
+          </select>
+
+          <h2 id="h_precio"></h2>
+
+          <h2 id="h_precio_descuento"></h2>
+
+          <button onclick="calcular()">calcular</button>
+        
+        <script src="main.js"></script>
+    </body>
+</html>
