@@ -1,4 +1,4 @@
-async function cosnumir_datos() {
+async function consumir_datos() {
     
     //realidzar la peticion http a traves del metodo GET
     const datos = await fetch('https://jsonplaceholder.typicode.com/users')
@@ -12,4 +12,4 @@ async function cosnumir_datos() {
 }
 
 //invoco a la función
-datos_definitivos
+consumir_datos()
